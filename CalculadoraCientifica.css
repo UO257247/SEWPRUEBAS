@@ -1,7 +1,7 @@
 
 
 body {
-    background-color: rgb(201, 157, 76);
+    background-color: lightyellow;
 }
 
 .calculator {
@@ -26,6 +26,8 @@ body {
     line-height: 2em;
     margin: 0.2em;
     margin-bottom: 0.6em;
+    display: block;
+    text-align: center;
 }
 
 button {
@@ -41,11 +43,4 @@ button {
 }
 button:hover {
     background: rgb(154, 215, 219);
-}
-
-.op {
-    background: rgb(145, 64, 64);
-}
-.op:hover {
-    background: rgb(182, 71, 71);
 }
