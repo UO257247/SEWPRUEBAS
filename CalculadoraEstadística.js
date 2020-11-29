@@ -1,5 +1,5 @@
 
-class BasicCalculator {
+class Calculator {
 
     constructor()
     {
@@ -79,6 +79,65 @@ class BasicCalculator {
     }
     
 
+    _parseArray() {
+        var array = [];
+
+        var split = this.string.split(", ");
+
+        for (let i = 0 ; i < split.length; i++) {
+            if (this.regex.test(split[i]))
+            {
+                console.log("Number found: " + split[i]);
+                array.push(eval(split[i]));
+            }
+            else {
+                console.log("Error parsing: " + split[i]);
+            }
+        }
+        return array;
+    }
+
+    doDeviation(){
+        this.string= "" + this._dev(); 
+        this.update();
+    }
+
+    _dev(){
+        var avg = this._avg();
+        var array = this._parseArray();
+
+        // i - media al cuadrado 
+        let result =0; 
+        for (let i =0; i < array.length; i++){
+           result += Math.pow(array[i] - avg, 2); 
+        }
+        result = Math.sqrt(result / array.length);
+        return result;
+    }
+
+    doVarianza(){
+        let result = Math.pow(this._dev(), 2);
+        this.string= "" + result; 
+        this.update();
+
+    }
+
+
+    doAverage(){
+       
+        this.string = "" + this._avg();
+        this.update();
+    }
+
+    _avg(){
+        var array = this._parseArray();
+
+        let result = 0;
+        for (let i = 0; i < array.length; i++)
+            result += array[i];
+        result /= array.length;
+        return result;
+    }
 
 
     doSin()
@@ -171,7 +230,7 @@ class BasicCalculator {
     }
 }
 
-var calc = new BasicCalculator();
+var calc = new Calculator();
 
 for (let i = 0; i < 10; i ++)
 {
@@ -182,11 +241,15 @@ for (let i = 0; i < 10; i ++)
 document.getElementById("clear").onclick = () => calc.clear();
 
 document.getElementById("dot").onclick = () => calc.push(".");
+document.getElementById("comma").onclick = () => calc.push(", ");
 
 document.getElementById("plus").onclick = () => calc.push("+");
 document.getElementById("minus").onclick = () => calc.push("-");
 document.getElementById("mult").onclick = () => calc.push("*");
 document.getElementById("div").onclick = () => calc.push("/");
+document.getElementById("avg").onclick = () => calc.doAverage();
+document.getElementById("desvTipica").onclick = () => calc.doDeviation();
+document.getElementById("varianza").onclick = () => calc.doVarianza();
 
 document.getElementById("equals").onclick = () => calc.evaluate();
 
