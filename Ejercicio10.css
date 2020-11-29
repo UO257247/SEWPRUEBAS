@@ -2,10 +2,11 @@ body {
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+
 }
 
 table{
-    background-color: lightblue;
+    display: inline;
 }
 
 th{ 
@@ -13,3 +14,7 @@ th{
     background-color: darkblue;
     color: white;
 }
+td{
+    background-color: lightblue;
+}
+
