@@ -20,6 +20,10 @@ table{
     font: 200 18px Tahoma, sans-serif;
 }
 
+td tr{
+    font: 200 18px Tahoma, sans-serif;
+}
+
 caption{
     font: 200 18px Tahoma, sans-serif;
 }
