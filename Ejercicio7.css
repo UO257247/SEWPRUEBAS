@@ -1,6 +1,6 @@
 
 body {
-    background-color:aliceblue;
+    background-color:lightblue;
 }
 
 h1 {
@@ -16,5 +16,5 @@ h2 {
 section {
     margin: 2em;
     padding: 2em;
-    background-color:lightblue;    
+    background-color:aliceblue;    
 }
