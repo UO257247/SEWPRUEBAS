@@ -2,15 +2,11 @@
 
 body {
     background-color: lightyellow;
-}
-
-h1{
     text-align: center;
 }
 
 label{
-    text-align: center;
-    color:white;
+    color: white;
 }
 
 .calculator {
@@ -33,7 +29,7 @@ label{
     font-size: 28px;
     width: 15.9em;
     line-height: 2em;
-    margin: 0.2em;
+    margin: auto;
     margin-bottom: 0.6em;
     display: block;
     text-align: center;
@@ -46,12 +42,10 @@ button {
     color: #1d2f36;
     cursor: pointer;
     font: inherit;
-    margin: 0.3em;
+    margin: 0.25em;
     width: 3em;
     height: 2em;
 }
 button:hover {
     background: rgb(154, 215, 219);
 }
-
-

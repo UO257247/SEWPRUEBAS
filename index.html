@@ -1,63 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Calculadora Científica</title>
-    <meta name="author" content="Marina Vega Fernández">
-    <link rel="stylesheet" type="text/css" href="CalculadoraCientifica.css" />
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculadora RPN</title>
+        <meta name="author" content="Marina Vega Fernández">
+        <link rel="stylesheet" type="text/css" href="CalculadoraRPN.css" />
+    </head>
 
-<body>
+    <body>
+        
+        <h1>Calculadora RPN</h1>
 
-    <h1>Calculadora Científica</h1>
+        <div id="calculator" class="calculator">
+            <label for="viewer">Viewer</label>
+            <input id="viewer" class="viewer" readonly />
 
-    <div id="calculator" class="calculator">
-        <label for="viewer">Viewer</label>
-        <input id="viewer" class="viewer" readonly />
+            <div>
+                <button id="regClear">mrc</button>
+                <button id="regMinus">m-</button>
+                <button id="regPlus">m+</button>
+                <button id="clear">C</button>
+            </div>
+            
+                <button id="pow">x&#178;</button>
+                <button id="sin">sin</button>
+                <button id="cos">cos</button>
+                <button id="tan">tan</button>
+                <button id="sqrt">&#8730;</button>            
 
-        <div>
-            <button id="regClear">mrc</button>
-            <button id="regMinus">m-</button>
-            <button id="regPlus">m+</button>
-            <button id="clear">C</button>
+               
+                <button id="factorial">n!</button>
+                <button id="log">log</button>
+                <button id="exp">Exp</button>
+                <button id="mod">Mod</button>
+                <button id="div">/</button>
+     
+                <button id="7">7</button>
+                <button id="8">8</button>
+                <button id="9">9</button>
+                <button id="dot">.</button>
+                <button id="mult">*</button>
+
+                <button id="4">4</button>
+                <button id="5">5</button>
+                <button id="6">6</button>
+                <button id="enter">Enter</button>
+                <button id="minus">-</button>
+            
+
+                <button id="1">1</button>
+                <button id="2">2</button>
+                <button id="3">3</button>
+                <button id="0">0</button>
+                <button id="plus">+</button>
+    
         </div>
-
-        <button id="pow">x&#178;</button>
-        <button id="sin">sin</button>
-        <button id="cos">cos</button>
-        <button id="tan">tan</button>
-        <button id="sqrt">&#8730;</button>
-
-
-        <button id="factorial">n!</button>
-        <button id="log">log</button>
-        <button id="exp">Exp</button>
-        <button id="mod">Mod</button>
-        <button id="div">/</button>
-
-
-        <button id="7">7</button>
-        <button id="8">8</button>
-        <button id="9">9</button>
-        <button id="dot">.</button>
-        <button id="mult">*</button>
-
-
-        <button id="4">4</button>
-        <button id="5">5</button>
-        <button id="6">6</button>
-        <button id="equals">=</button>
-        <button id="minus">-</button>
-
-        <button id="1">1</button>
-        <button id="2">2</button>
-        <button id="3">3</button>
-        <button id="0">0</button>
-        <button id="plus">+</button>
-    </div>
-    <script src="CalculadoraCientifica.js"></script>
-    <footer>Calculadora científica desarrollada por Marina Vega Fernández</footer>
-</body>
-
+        <script src="CalculadoraRPN.js"></script>
+        <footer>CalculadoraRPN desarrollada por Marina Vega Fernández</footer>
+    </body>
 </html>
