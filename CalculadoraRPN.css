@@ -9,12 +9,16 @@ label{
     color: white;
 }
 
+footer{
+    text-align: left;
+}
+
 .calculator {
     font-size: 24px;
     margin: 0 auto;
-    height: 20em;
-    width: 19em;
-    padding: 0.5em;
+    height: 21em;
+    width: 20em;
+    padding: 0.60em;
     background-color: rgb(100, 100, 109);
     border-radius: 12px;
 }
@@ -42,7 +46,7 @@ button {
     color: #1d2f36;
     cursor: pointer;
     font: inherit;
-    margin: 0.25em;
+    margin: 0.4em;
     width: 3em;
     height: 2em;
 }
