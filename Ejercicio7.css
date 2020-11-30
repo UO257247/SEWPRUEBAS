@@ -6,7 +6,7 @@ body {
 }
 
 h1 {
-    background-color: aliceblue;
+    background-color: white;
     text-align: center;
 }
 
@@ -31,5 +31,5 @@ caption{
 section {
     margin: 3em;
     padding: 3em;
-    background-color:aliceblue;    
+    background-color:white;    
 }
